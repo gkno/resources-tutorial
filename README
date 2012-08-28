@@ -1,0 +1,96 @@
+
+NOTE - Please do not touch the targets.json file. gkno relies on it
+       for proper resource management. Thanks. :)
+
+ ----------------------------------------------
+ -- Looking for this genome's resource data? --
+ ---------------------------------------------- 
+
+From the launcher's root directory, typing:
+
+    ./gkno add-resource
+
+will display a list of all genomes that gkno is hosting and can fetch for you. 
+If you see the organism you're looking for, typing:
+
+    ./gkno add-resource <organism>
+
+will download its current genome build, or release. That release's files will be 
+stored under the organism's directory: 
+(i.e. .../gkno_launcher/resources/homo_sapiens/build_37).
+In addition, a symlink (shortcut) named "current" will be created in the 
+organism's directory that points to the current release.
+
+Later, in addition to updating gkno itself, typing:
+
+    ./gkno update
+
+will show a list of all organisms with new 'current' releases. Typing:
+
+    ./gkno update-resource <organism>
+
+will fetch its into the organism's directory, and move the "current" symlink to
+point to the new release data. You may also add the new release without 
+changing the "current" shortcut (see below on adding particular releases). 
+
+Most organisms have named "aliases" that you may use when adding or removing 
+resources. For example, typing:
+
+    ./gkno add-resource human
+    ./gkno remove-resource mouse
+    ./gkno update-resource c.elegans
+
+would have the same effect same as typing:
+
+    ./gkno add-resource homo_sapiens
+    ./gkno remove-resource mus_musculus
+    ./gkno update-resource caenorhabditis_elegans
+
+but *much* easier to type. :)
+
+ ------------------------------------------------------
+ -- Want to add a particular (older) genome release? --
+ ------------------------------------------------------
+
+As new genome versions are released, you may find that the most current one is 
+not the one you want to work with. If we host an older release, it's easy to 
+fetch. From the launcher's root directory, typing:
+
+    ./gkno add-resource <organism> --release
+
+will display a list all available releases for that genome. Once you see the 
+release you want, typing (for example):
+
+    ./gkno add-resource human --release build_36.3
+
+will store that release of the genome in a subdirectory called build_36.3 
+( .../gkno_launcher/resources/homo_sapiens/build_36.3/ ). 
+
+gkno can handle multiple releases for a particular genome, so feel free to add 
+as many or as few releases as you need. Just be sure to specify the correct 
+resource path when you run a pipe or tool command.
+
+This approach also works for grabbing a newer release without changing your
+organism's "current" symlink. 
+
+ ----------------------------------------
+ -- Want to remove an organism's data? --
+ ----------------------------------------
+
+From the launcher's root directory, typing:
+
+    ./gkno remove-resource
+
+will display all of your resources (organisms and their releases) that can
+be removed. Typing:
+
+    ./gkno remove-resource <organism>
+
+will remove all of the resource data for that organism (all releases).
+
+Removing a particular release is as simple as adding it. Typing (for example):
+
+    ./gkno remove-resource human --release build_36.1
+
+will remove the files for that release only, leaving any others intact. 
+
