@@ -1,5 +1,10 @@
 {
   "file-version" : 1,
-  "current" : "",
-  "targets" : []
+  "current" : "version_1",
+  "targets" : [
+    {
+      "name" : "version_1",
+      "url" : "https://github.com/downloads/gkno/resources-tutorial/version_1.tar.gz"
+    }
+  ]
 }
