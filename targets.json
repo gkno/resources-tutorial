@@ -4,7 +4,7 @@
   "targets" : [
     {
       "name" : "version_1",
-      "url" : "https://github.com/downloads/gkno/resources-tutorial/version_1.tar.gz"
+      "url" : "http://bioinformatics.bc.edu/marthlab/download/gkno-resources/tutorial/version_1.tar.gz"
     }
   ]
 }
