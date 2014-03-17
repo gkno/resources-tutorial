@@ -8,3 +8,13 @@
     }
   ]
 }
+{
+  "file-version" : 3,
+  "current" : "version_3",
+  "targets" : [
+    {
+      "name" : "version_3",
+      "url" : "http://bioinformatics.bc.edu/marthlab/download/gkno-resources/tutorial/version_3.tar.gz"
+    }
+  ]
+}
