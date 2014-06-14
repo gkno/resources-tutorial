@@ -1,6 +1,6 @@
 {
-  "file-version" : 3,
-  "current" : "version_3",
+  "file-version" : 4,
+  "current" : "version_4",
   "targets" : [
     {
       "name" : "version_1",
@@ -9,6 +9,10 @@
     {
       "name" : "version_3",
       "url" : "http://bioinformatics.bc.edu/marthlab/download/gkno-resources/tutorial/version_3.tar.gz"
+    },
+    {
+      "name" : "version_4",
+      "url" : "http://bioinformatics.bc.edu/marthlab/download/gkno-resources/tutorial/version_4.tar.gz"
     }
   ]
 }
