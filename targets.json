@@ -1,6 +1,6 @@
 {
   "file-version" : 4,
-  "current" : "version_4",
+  "current" : "version_4_utah",
   "targets" : [
     {
       "name" : "version_1",
@@ -13,6 +13,10 @@
     {
       "name" : "version_4",
       "url" : "http://bioinformatics.bc.edu/marthlab/download/gkno-resources/tutorial/version_4.tar.gz"
+    },
+    {
+      "name" : "version_4_utah",
+      "url" : "http://marth-award.genetics.utah.edu:8089/version_4.tar.gz"
     }
   ]
 }
