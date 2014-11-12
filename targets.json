@@ -1,6 +1,6 @@
 {
-  "file-version" : 5,
-  "current" : "version_5",
+  "file-version" : 6,
+  "current" : "version_6",
   "targets" : [
     {
       "name" : "version_1",
@@ -21,6 +21,10 @@
     {
       "name" : "version_5",
       "url" : "http://marth-award.genetics.utah.edu:8089/version_5.tar.gz"
+    },
+    {
+      "name" : "version_6",
+      "url" : "http://marth-award.genetics.utah.edu:8089/version_6.tar.gz"
     }
   ]
 }
